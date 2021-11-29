@@ -7,21 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="/styles/design.css" />
   </head>
-  <body class="theme-color">
+  <body class="text">
     <main>
+
       <!-- Show the modal to the user -->
-      <button id="myBtn">Open Modal</button>
+      <div class="card">
+        <button id="btn-opener">Take an important decision</button>
+      </div>
 
       <!-- The Modal -->
-      <div id="myModal" class="modal">
+      <div id="user-modal" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
           <span class="close">&times;</span>
-          <button id='btn-accept'>Confirm your decision</button>
-          <button id="btn-cancel" value="ffghh">Abort your decision</button>
+          <button id="btn-accept" class="button">Confirm your decision</button>
+          <button id="btn-cancel" class="button">Abort your decision</button>
         </div>
       </div>
-      <h1 id="response"></h1>
+      <h1 id="response" class="text"></h1>
     </main>
 
     <script src="/actions/modal.js"></script>

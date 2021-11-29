@@ -1,41 +1,105 @@
-/* .theme-color{
-    background-color: rgb(15, 14, 14);
-    color: antiquewhite;
-} */
+*{
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
 
+.text{
+    text-align: center;
+}
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: none;
+  width: 40%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  border: none;
+  background: rgba(24, 23, 23, 0.678);
+  border-radius: 5px;
+  height: 150px;
+}
+
+.button {
+  width: 300px;
+  padding: 10px;
+  margin-top: 5px;
+  background: rgba(31, 29, 29, 0.568);
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  align-self: flex-end;
+  font-size: 28px;
+  display: block;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(131, 20, 20);
+  text-decoration: none;
+  cursor: pointer;
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+.card {
+  width: 300px;
+  background: rgba(0, 0, 0, 0.301);
+  height: 320px;
+  border-radius: 5px;
+  display: flex;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -8px 1px 56px -7px rgba(0, 0, 0, 0.75);
+}
+
+#btn-opener {
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: rgba(22, 20, 20, 0.623);
+  font-size: 15px;
+  box-shadow: 3px 62px 37px -31px rgba(0, 0, 0, 0.75);
+  transition: 1s;
+}
+
+#btn-opener:hover {
+  transition: 1s;
+  color: white;
+  background: rgba(0, 0, 0, 0.692);
+  transform: scale(1.1);
+  letter-spacing: 2px;
+  width: 220px;
+}
